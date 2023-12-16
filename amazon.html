@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>Amazon</title>
+    <link rel="stylesheet" href="amazon.css">
+    <script src="amazon.js"></script>
+</head>
+
+<div>
+    <div id="navItemsList">
+        <ul>
+            <li>Amazon</li>
+            <li><a href="https://www.facebook.com/login/" target="_blank">Home</a></li>
+            <li><a href="https://www.samsung.com/in/offer/online/samsung-fest/" target="_blank">Mobiles</a></li>
+            <li><a href="https://www.flipkart.com/laptops-store" target="_blank">Laptops</a></li>
+            <li><a href="https://www.myntra.com/accessories" target="_blank">Accessories</a></li>
+        </ul>
+    </div>
+    <div>
+        <img src="amazon_hero.jpg" />
+    </div>
+    <h1>
+        Order Shoes Online
+    </h1>
+    <div id="shoes">
+        <div>
+            <div class="divImg">
+                <img src="Bata Shoes.jpg" class="image">
+            </div>
+            <div class="divInfo">
+                <div> Brand: Bata</div>
+                <div>Price: Rs.<span class="price">800</span>/-</div>
+                <div>Quantity:
+                    <input type="number" class="quantity" id="bataQuantity" />
+                </div>
+                <div><input type="button" value="Add To Cart" onclick="addToCart('bata')" /></div>
+            </div>
+        </div>
+
+        <div>
+            <div class="divImg">
+                <img src="Nike Shoes.jpg" class="image" />
+            </div>
+            <div class="divInfo">
+                <div>Brand: Nike</div>
+                <div>Price: Rs.<span class="price">900</span>/-</div>
+                <div>Quantity
+                    <input type="number" class="quantity" />
+                </div>
+                <div><input type="button" value="Add To Cart" onclick="addToCart('nike')" /></div>
+            </div>
+        </div>
+
+        <div>
+            <div class="divImg">
+                <img src="Leather Shoes.jpg" class="image" />
+            </div>
+            <div class="divInfo">
+                <div>Brand: Leather</div>
+                <div>Price: Rs.<span class="price">1000</span>/-</div>
+                <div>Quantity
+                    <input type="number" class="quantity" />
+                </div>
+                <div> <input type="button" value="Add To Cart" onclick="addToCart('leather')" /></div>
+            </div>
+        </div>
+
+        <div>
+            <div class="divImg">
+                <img src="Adidas Shoes.jpg" class="image" />
+            </div>
+            <div class="divInfo">
+                <div>Brand: Adidas</div>
+                <div>Price: Rs.<span class="price">1500</span>/-</div>
+                <div>Quantity
+                    <input type="number" class="quantity" />
+                </div>
+                <div><input type="button" value="Add To Cart" onclick="addToCart('adidas')" /></div>
+            </div>
+        </div>
+    </div>
+    <div>Cost total: Rs. <span id="totalCost">0</span>/-</div><br><br>
+    <div> <input type="button" value="Place order" /></div>
+    </body>
+
+</html>
